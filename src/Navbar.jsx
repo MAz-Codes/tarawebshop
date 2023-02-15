@@ -4,13 +4,14 @@ import {
     ButtonGroup,
     Container,
     Flex,
+    Image,
     HStack,
     IconButton,
     useBreakpointValue,
   } from '@chakra-ui/react'
   import { FiMenu } from 'react-icons/fi'
-
-  
+  import Logo from "./assets/BlackLogo.svg"
+  import CartIcon from './CartIcon'
   export const Navbar= () => {
     const isDesktop = useBreakpointValue({
       base: false,
@@ -20,8 +21,8 @@ import {
         <Box
         as="section"
         pb={{
-          base: '3',
-          md: '9',
+          base: '1',
+          md: '3',
         }}
       >
         <Box as="nav" bg="bg-surface" boxShadow="sm" >
@@ -35,6 +36,7 @@ import {
             <HStack spacing="10" justify="space-between">
                    {isDesktop ? (
                 <Flex justify="space-between" flex="2">
+                  <Image src={Logo} alt="Tara Logo" opacity={"70%"} w={{base:"0%", md:"50px"}} h={{base:"0%", md:"50px"}}></Image>
                   <ButtonGroup variant="link"  spacing="8">
                     {['Product', 'Pricing', 'Resources', 'Support'].map((item) => (
                       <Button key={item} style={{textDecoration: 'none'}}>{item}</Button>
@@ -42,7 +44,7 @@ import {
                   </ButtonGroup>
                   <HStack spacing="3">
                     <Button bg="gray.200">Sign in</Button>
-                    <Button bg={"gray.400"}>Sign up</Button>
+                    <CartIcon></CartIcon>
                   </HStack>
                 </Flex>
               ) : (

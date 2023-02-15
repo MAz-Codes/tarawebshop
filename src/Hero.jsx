@@ -13,7 +13,7 @@ const Hero = () => {
       p={6}
     >
 
-      <Box margin="0 auto" maxW="64rem" py={{ base: '1rem', lg: '8rem' }}>
+      <Box margin="0 auto" maxW="64rem" py={{ base: '1rem', lg: '8rem' }} >
         <Heading as="h2" fontSize={{ base: '2.25rem', lg: '3rem' }}  color="#fff" maxW={{ base: '100%', md: '45%' }}>
           Taking Sustainable Fashion To The Next Level.
         </Heading>
