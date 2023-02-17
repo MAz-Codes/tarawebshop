@@ -1,7 +1,9 @@
 import React from 'react'
 import { useState } from 'react'
 import { Box,
+    Heading,
     Spacer,
+    Divider
 } from '@chakra-ui/react'
 import CardTemplate from './CardTemplate'
 
@@ -30,6 +32,8 @@ function Highlights() {
         <Box
         pt="10"
         >
+          <Divider boxShadow={"dark-lg"}/>
+          <Heading p="6">Season Highlights</Heading>
           <CardTemplate infos={infos}/>
         </Box>
       )

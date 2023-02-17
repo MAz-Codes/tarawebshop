@@ -12,6 +12,8 @@ import {
   import { FiMenu } from 'react-icons/fi'
   import Logo from "./assets/BlackLogo.svg"
   import CartIcon from './CartIcon'
+
+
   export const Navbar= () => {
     const isDesktop = useBreakpointValue({
       base: false,
