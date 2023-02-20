@@ -22,18 +22,20 @@ import {
     return (
         <Box
         as="section"
+        w="100%"
         pb={{
           base: '1',
           md: '3',
         }}
       >
-        <Box as="nav" bg="bg-surface" boxShadow="sm" >
+        <Box as="nav" bg="bg-surface" px="2" boxShadow="base">
           <Container
           maxW="100%"
-            py={{
-              base: '4',
-              lg: '5',
-            }}
+          
+          py={{
+            base: '2',
+            lg: '3',
+          }}
           >
             <HStack spacing="10" justify="space-between">
                    {isDesktop ? (
@@ -41,7 +43,7 @@ import {
                   <Image src={Logo} alt="Tara Logo" opacity={"70%"} w={{base:"0%", md:"50px"}} h={{base:"0%", md:"50px"}}></Image>
                   <ButtonGroup variant="link"  spacing="8">
                     {['Product', 'Pricing', 'Resources', 'Support'].map((item) => (
-                      <Button key={item} style={{textDecoration: 'none'}}>{item}</Button>
+                      <Button key={item} textColor="black" style={{textDecoration: 'none'}}>{item}</Button>
                     ))}
                   </ButtonGroup>
                   <HStack spacing="3">

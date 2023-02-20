@@ -31,6 +31,7 @@ function Highlights() {
      return (
         <Box
         pt="10"
+        mx={{ base: '5', lg: '20' }}
         >
           <Divider boxShadow={"dark-lg"}/>
           <Heading p="6">Season Highlights</Heading>

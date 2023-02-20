@@ -11,6 +11,7 @@ const Hero = () => {
       align="center"
       borderRadius={"3xl"}
       p={6}
+      mx={{ base: '5', lg: '20' }}
     >
 
       <Box margin="0 auto" maxW="64rem" py={{ base: '1rem', lg: '8rem' }} >
