@@ -28,10 +28,9 @@ import {
           md: '3',
         }}
       >
-        <Box as="nav" bg="bg-surface" px="2" boxShadow="base">
+        <Box as="nav" bg="bg-surface" px="2" boxShadow="base" >
           <Container
           maxW="100%"
-          
           py={{
             base: '2',
             lg: '3',
@@ -42,21 +41,33 @@ import {
                 <Flex justify="space-between" flex="2">
                   <Image src={Logo} alt="Tara Logo" opacity={"70%"} w={{base:"0%", md:"50px"}} h={{base:"0%", md:"50px"}}></Image>
                   <ButtonGroup variant="link"  spacing="8">
-                    {['Product', 'Pricing', 'Resources', 'Support'].map((item) => (
-                      <Button key={item} textColor="black" style={{textDecoration: 'none'}}>{item}</Button>
-                    ))}
+                    <Button textColor="black" borderRadius={"50px"}  px="4" style={{textDecoration: 'none'}}>Catalog</Button>
+                    <Button textColor="black" borderRadius={"50px"} px="4" style={{textDecoration: 'none'}}>Accessoires</Button>
+                    <Button textColor="black"  borderRadius={"50px"} px="4" style={{textDecoration: 'none'}}>About us</Button>
+                    <Button textColor="black" borderRadius={"50px"} px="4" style={{textDecoration: 'none'}}>Contact</Button>
                   </ButtonGroup>
                   <HStack spacing="3">
-                    <Button bg="gray.200">Sign in</Button>
+                    <Button borderRadius={"50px"} bg="gray.200">Sign in</Button>
                     <CartIcon></CartIcon>
                   </HStack>
                 </Flex>
               ) : (
-                <IconButton
-                  variant="ghost"
-                  icon={<FiMenu fontSize="1.25rem" />}
-                  aria-label="Open Menu"
-                />
+                <Flex justify={"space-between"} flex="2" mx="3">
+                  <IconButton
+                    variant="ghost"
+                    icon={<FiMenu fontSize="1.25rem" />}
+                    aria-label="Open Menu"
+                  />
+
+                  <Image
+                    src={Logo}
+                    alt="Tara Logo"
+                    opacity={"90%"}
+                    w="10%">
+                  </Image>
+
+                  <CartIcon></CartIcon>
+                </Flex>
               )}
             </HStack>
           </Container>

@@ -22,8 +22,8 @@ function CardTemplate({infos}) {
 
   return (
     <Grid 
-    templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(auto-fit, minmax(400px, 1fr))" }}
-    gap={0.5}
+    templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)", xl: "repeat(4, 1fr)"}}
+    gap={2}
     >
         {infos.map((info) => (
             <Card
@@ -33,7 +33,7 @@ function CardTemplate({infos}) {
             minWidth="auto"
             borderRadius="lg"
             boxShadow={"2xl"}
-             >
+            >
                 <CardBody>
                     <Img
                     src={info.url}

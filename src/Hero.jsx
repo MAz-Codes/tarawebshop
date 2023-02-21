@@ -41,7 +41,7 @@ function Hero() {
           mb={{ base: '1rem', lg: '0' }}
         >
           <Text mb="0.5rem" color="#1a1f2c">
-            Find sustainable and fairtrade fashion
+            find sustainable and affordable fashion
           </Text>
           <Button
             as={Link}

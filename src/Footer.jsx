@@ -47,22 +47,20 @@ import {
                 <Stack direction="row" spacing="8">
                     <Stack spacing="4" minW="36" flex="1" >
                     <Text fontSize="sm" fontWeight="semibold" color="subtle">
-                        Product
+                        Catalog
                     </Text>
                     <Stack spacing="3" shouldWrapChildren >
-                        <Button variant="link">How it works</Button>
-                        <Button variant="link">Pricing</Button>
-                        <Button variant="link">Use Cases</Button>
+                        <Button variant="link" style={{textDecoration: 'none'}}>New Catalog</Button>
+                        <Button variant="link" style={{textDecoration: 'none'}}>Accessoires</Button>
                     </Stack>
                     </Stack>
                     <Stack spacing="4" minW="36" flex="1">
                     <Text fontSize="sm" fontWeight="semibold" color="subtle">
-                        Legal
+                        Support
                     </Text>
                     <Stack spacing="3" shouldWrapChildren>
-                        <Button variant="link">Privacy</Button>
-                        <Button variant="link">Terms</Button>
-                        <Button variant="link">License</Button>
+                        <Button variant="link" style={{textDecoration: 'none'}}>About us</Button>
+                        <Button variant="link" style={{textDecoration: 'none'}}>Contact</Button>
                     </Stack>
                     </Stack>
                 </Stack>
@@ -79,7 +77,7 @@ import {
             </Stack>
         </Stack>
       <Divider />
-    <Text fontSize="sm" color="subtle">
+    <Text fontSize="sm" color="#828fa1" py="2">
         &copy; {new Date().getFullYear()} Tara Fashion Inc. All rights reserved.
     </Text>
     </Container>
