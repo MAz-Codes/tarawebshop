@@ -11,12 +11,13 @@ import {
     Stack,
     Grid} from '@chakra-ui/react'
 
-function CardTemplate({infos}) {
+function CatalogTemplate({infos}) {
 
 return (
     <Grid 
     templateColumns={{base: "repeat(1, 1fr)",
-                    md: "repeat(2, 1fr)"}}
+                    md: "repeat(2, 1fr)",
+                    xl: "repeat(4, 1fr)"}}
     gap={2}
     >
         {infos.map((info) => (
@@ -34,7 +35,7 @@ return (
                     alt={info.alt}
                     borderRadius='lg'
                     />
-                    <Stack mt='6' spacing='3' align="space-between">
+                    <Stack mt='6' spacing='3' align="space-between" maxH="100%">
                         <Heading size='md'>{info.title}</Heading>
                         <Text>
                             {info.body}
@@ -59,4 +60,4 @@ return (
     )
 }
 
-export default CardTemplate
+export default CatalogTemplate

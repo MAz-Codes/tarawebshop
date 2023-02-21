@@ -46,7 +46,7 @@ import { useNavigate } from "react-router-dom";
                   <Image src={Logo} alt="Tara Logo" opacity={"70%"} w={{base:"0%", md:"50px"}} h={{base:"0%", md:"50px"}}></Image>
                   <ButtonGroup variant="link"  spacing="8">
                     <Button textColor="black" borderRadius={"50px"}  px="4" style={{textDecoration: 'none'}} onClick={() =>  navi('/')}>Home</Button>
-                    <Button textColor="black" borderRadius={"50px"} px="4" style={{textDecoration: 'none'}}>Catalog</Button>
+                    <Button textColor="black" borderRadius={"50px"} px="4" style={{textDecoration: 'none'}} onClick={() =>  navi('/catalog')}>Catalog</Button>
                     <Button textColor="black"  borderRadius={"50px"} px="4" style={{textDecoration: 'none'}} onClick={() => navi('/about')} >About us</Button>
                     <Button textColor="black" borderRadius={"50px"} px="4" style={{textDecoration: 'none'}}>Contact</Button>
                   </ButtonGroup>

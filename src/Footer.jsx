@@ -54,7 +54,7 @@ import {
                         Catalog
                     </Text>
                     <Stack spacing="3" shouldWrapChildren >
-                        <Button variant="link" style={{textDecoration: 'none'}}>New Catalog</Button>
+                        <Button variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/catalog')}>New Catalog</Button>
                         <Button variant="link" style={{textDecoration: 'none'}}>Accessoires</Button>
                     </Stack>
                     </Stack>

@@ -26,23 +26,6 @@ function Highlights() {
          price: "121,99"
         },
 
-        {id: "3",
-         url: 'https://images.unsplash.com/photo-1512117245022-861aeca0d689?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-         alt: 'recycled scarf',
-         title: "FL21 Backpack",
-         body: "Faux leather backpack made from 100% rececled materials, including PET plastic recovered from the ocean. Made with love under supervised working conditions with fair pay. Available in multiple colors.",
-         price: "121,99"
-        },
-
-
-        {id: "4",
-         url: 'https://images.unsplash.com/photo-1512633611077-51bf3c872a0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80',
-         alt: 'recycled scarf',
-         title: "FL21 Backpack",
-         body: "Faux leather backpack made from 100% rececled materials, including PET plastic recovered from the ocean. Made with love under supervised working conditions with fair pay. Available in multiple colors.",
-         price: "121,99"
-        },
-
      ])
 
      return (
