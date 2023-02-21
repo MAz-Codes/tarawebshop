@@ -9,11 +9,15 @@ import {
     Text,
     VStack
   } from '@chakra-ui/react'
+  import { useNavigate } from "react-router-dom";
   import { FaFacebook, FaInstagramSquare, FaTwitter } from 'react-icons/fa'
   import Logo from "./assets/BlackLogo.svg"
 
 
-  export const Footer = () => (
+  export const Footer = () => {
+    const navi = useNavigate();
+
+    return (
     <Container  role="contentinfo" maxW="100%"   >
         <Stack
         direction={{
@@ -59,7 +63,7 @@ import {
                         Support
                     </Text>
                     <Stack spacing="3" shouldWrapChildren>
-                        <Button variant="link" style={{textDecoration: 'none'}}>About us</Button>
+                        <Button variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/about')}>About us</Button>
                         <Button variant="link" style={{textDecoration: 'none'}}>Contact</Button>
                     </Stack>
                     </Stack>
@@ -82,5 +86,5 @@ import {
     </Text>
     </Container>
   )
-
+}
   export default Footer;

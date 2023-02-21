@@ -1,28 +1,23 @@
 import React from 'react'
-import { Box,
-    Wrap,
+import {
     Heading,
     Divider,
     CardFooter,
-    ButtonGroup,
     Button,
     Card,
     Img,
     Text,
     CardBody,
-    Spacer,
     Stack,
-    HStack,
-    Flex,
     Grid} from '@chakra-ui/react'
 
 function CardTemplate({infos}) {
 
-
-
-  return (
+return (
     <Grid 
-    templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)", xl: "repeat(4, 1fr)"}}
+    templateColumns={{base: "repeat(1, 1fr)",
+                    md: "repeat(2, 1fr)",
+                    xl: "repeat(4, 1fr)"}}
     gap={2}
     >
         {infos.map((info) => (
@@ -50,16 +45,19 @@ function CardTemplate({infos}) {
                         </Text>
                     </Stack>
                 </CardBody>
-                <Divider />
+                <Divider color={"gray.300"}  />
                 <CardFooter justify={"center"}>
-                        <Button bg="gray.200" maxWidth={{ base: "100%", md: "80%" }}>
-                            Add to cart
+                        <Button
+                        bg="gray.200"
+                        maxWidth={{ base: "100%", md: "80%" }}>
+
+                        Add to cart
                         </Button>
                 </CardFooter>
             </Card>
         ))}
     </Grid>
-  )
+    )
 }
 
 export default CardTemplate

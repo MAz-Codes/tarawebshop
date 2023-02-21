@@ -9,9 +9,10 @@ import {
     IconButton,
     useBreakpointValue,
   } from '@chakra-ui/react'
-  import { FiMenu } from 'react-icons/fi'
-  import Logo from "./assets/BlackLogo.svg"
-  import CartIcon from './CartIcon'
+import { FiMenu } from 'react-icons/fi'
+import Logo from "./assets/BlackLogo.svg"
+import CartIcon from './CartIcon'
+import { useNavigate } from "react-router-dom";
 
 
   export const Navbar= () => {
@@ -19,6 +20,9 @@ import {
       base: false,
       lg: true,
     })
+
+    const navi = useNavigate();
+
     return (
         <Box
         as="section"
@@ -41,9 +45,9 @@ import {
                 <Flex justify="space-between" flex="2">
                   <Image src={Logo} alt="Tara Logo" opacity={"70%"} w={{base:"0%", md:"50px"}} h={{base:"0%", md:"50px"}}></Image>
                   <ButtonGroup variant="link"  spacing="8">
-                    <Button textColor="black" borderRadius={"50px"}  px="4" style={{textDecoration: 'none'}}>Catalog</Button>
-                    <Button textColor="black" borderRadius={"50px"} px="4" style={{textDecoration: 'none'}}>Accessoires</Button>
-                    <Button textColor="black"  borderRadius={"50px"} px="4" style={{textDecoration: 'none'}}>About us</Button>
+                    <Button textColor="black" borderRadius={"50px"}  px="4" style={{textDecoration: 'none'}} onClick={() =>  navi('/')}>Home</Button>
+                    <Button textColor="black" borderRadius={"50px"} px="4" style={{textDecoration: 'none'}}>Catalog</Button>
+                    <Button textColor="black"  borderRadius={"50px"} px="4" style={{textDecoration: 'none'}} onClick={() => navi('/about')} >About us</Button>
                     <Button textColor="black" borderRadius={"50px"} px="4" style={{textDecoration: 'none'}}>Contact</Button>
                   </ButtonGroup>
                   <HStack spacing="3">

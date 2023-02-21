@@ -12,7 +12,6 @@ function Hero() {
     p={6}
     >
   <video
-    
     autoPlay
     muted
     loop
@@ -24,15 +23,15 @@ function Hero() {
       width: "100%",
       height: "100%",
       objectFit: "cover",
-      opacity: 0.5,
-      filter: "grayscale(100%)"
+      opacity: 0.6,
+      //filter: "grayscale(100%)"
     }}
   >
     <source src={Video} type="video/mp4"/>
 
   </video>
   <Box margin="0 auto" maxW="64rem" py={{ base: '1rem', lg: '8rem' }} position="relative" >
-        <Heading as="h2" fontSize={{ base: '2.25rem', lg: '3rem' }}  color="#1a1f2c" maxW={{ base: '100%', md: '45%' }}>
+        <Heading as="h2" pb="4" fontSize={{ base: '2.25rem', lg: '3rem' }}  color="#1a1f2c" maxW={{ base: '100%', md: '45%' }}>
           Taking Sustainable Fashion To The Next Level.
         </Heading>
         <Box
