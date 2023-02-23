@@ -44,11 +44,11 @@ import { useNavigate } from "react-router-dom";
                    {isDesktop ? (
                 <Flex justify="space-between" flex="2">
                   <Image src={Logo} alt="Tara Logo" opacity={"70%"} w={{base:"0%", md:"50px"}} h={{base:"0%", md:"50px"}}></Image>
-                  <ButtonGroup variant="link"  spacing="8">
+                  <ButtonGroup variant="link"  spacing="8" pl="20">
                     <Button textColor="black" borderRadius={"50px"}  px="4" style={{textDecoration: 'none'}} onClick={() =>  navi('/')}>Home</Button>
                     <Button textColor="black" borderRadius={"50px"} px="4" style={{textDecoration: 'none'}} onClick={() =>  navi('/catalog')}>Catalog</Button>
                     <Button textColor="black"  borderRadius={"50px"} px="4" style={{textDecoration: 'none'}} onClick={() => navi('/about')} >About us</Button>
-                    <Button textColor="black" borderRadius={"50px"} px="4" style={{textDecoration: 'none'}}>Contact</Button>
+                    <Button textColor="black" borderRadius={"50px"} px="4" style={{textDecoration: 'none'}} onClick={() => navi('/contact')}>Contact</Button>
                   </ButtonGroup>
                   <HStack spacing="3">
                     <Button borderRadius={"50px"} bg="gray.200">Sign in</Button>

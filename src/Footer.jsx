@@ -18,7 +18,10 @@ import {
     const navi = useNavigate();
 
     return (
+
+    
     <Container  role="contentinfo" maxW="100%"   >
+        <Divider boxShadow={"dark-lg"} mt="5"/>
         <Stack
         direction={{
         base: 'column',
@@ -51,11 +54,11 @@ import {
                 <Stack direction="row" spacing="8">
                     <Stack spacing="4" minW="36" flex="1" >
                     <Text fontSize="sm" fontWeight="semibold" color="subtle">
-                        Catalog
+                        Shop
                     </Text>
                     <Stack spacing="3" shouldWrapChildren >
-                        <Button variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/catalog')}>New Catalog</Button>
-                        <Button variant="link" style={{textDecoration: 'none'}}>Accessoires</Button>
+                        <Button variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/')}>Home</Button>
+                        <Button variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/catalog')}>Catalog</Button>
                     </Stack>
                     </Stack>
                     <Stack spacing="4" minW="36" flex="1">
@@ -64,7 +67,7 @@ import {
                     </Text>
                     <Stack spacing="3" shouldWrapChildren>
                         <Button variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/about')}>About us</Button>
-                        <Button variant="link" style={{textDecoration: 'none'}}>Contact</Button>
+                        <Button variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/contact')}>Contact</Button>
                     </Stack>
                     </Stack>
                 </Stack>

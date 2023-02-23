@@ -1,8 +1,12 @@
 import React from 'react'
 import Video from "./assets/take.mp4"
 import { Box, Link, Divider, Heading, Text, Button } from '@chakra-ui/react'
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
+
+  const navi = useNavigate();
+
   return (
     <Box
     bgSize="cover"
@@ -52,6 +56,7 @@ function Hero() {
             width="full"
             rounded="md"
             _hover={{ bg: 'gray.300', textColor: "#1a1f2c",  textDecoration: 'none' }}
+            onClick={() => navi('/catalog')}
           >
             Explore Catalog
           </Button>

@@ -46,7 +46,7 @@ function Catalog() {
          alt: 'red jacket',
          title: "Red Jacket",
          body: "This white dress made from sustainable fabrics can be the perfect addition to your wardrobe. Ideal for hot summer days.",
-         price: "49,99"
+         price: "69,99"
         },
 
         {id: "6",
@@ -54,7 +54,7 @@ function Catalog() {
          alt: 'hat',
          title: "Sun Cap",
          body: "A Faux leather backpack made from 100% PET plastic with enough space for your belongings. Available in multiple colors.",
-         price: "79,99"
+         price: "17,99"
         },
 
         {id: "7",
@@ -62,7 +62,7 @@ function Catalog() {
          alt: 'pullover',
          title: "Shoulder-free Pullover",
          body: "A scarf made from sustainable materials such as organic cotton or recycled polyester can be a stylish and eco-conscious accessory.",
-         price: "39,79"
+         price: "34,79"
         },
 
 
@@ -71,73 +71,73 @@ function Catalog() {
          alt: 'Light Jacket',
          title: "Light Jacket",
          body: "Boots made from recycled rubber or eco-friendly leather alternatives can be both fashionable and environmentally responsible.",
-         price: "121,99"
+         price: "92,99"
         },
 
         {id: "9",
          url: 'https://images.unsplash.com/photo-1507274301514-7de9f124ff54?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1746&q=80',
-         alt: 'dress',
-         title: "White Summer Dress",
+         alt: 'Handmade Skirt',
+         title: "Handmade Skirt",
          body: "This white dress made from sustainable fabrics can be the perfect addition to your wardrobe. Ideal for hot summer days.",
-         price: "49,99"
+         price: "75,99"
         },
 
         {id: "10",
          url: 'https://images.unsplash.com/photo-1504766475134-f0c0c62a5668?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1746&q=80',
-         alt: 'Second Hand',
-         title: "Backpack",
+         alt: 'Skirt',
+         title: "Jeans Skirt",
          body: "A Faux leather backpack made from 100% PET plastic with enough space for your belongings. Available in multiple colors.",
-         price: "79,99"
+         price: "44,99"
         },
 
         {id: "11",
          url: 'https://images.unsplash.com/photo-1484328489804-80399374c9c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1746&q=80',
-         alt: 'recycled scarf',
-         title: "Schal",
+         alt: 'jeans',
+         title: "Cropped Jeans",
          body: "A scarf made from sustainable materials such as organic cotton or recycled polyester can be a stylish and eco-conscious accessory.",
-         price: "39,79"
+         price: "34,89"
         },
 
 
         {id: "12",
          url: 'https://images.unsplash.com/photo-1507702553912-a15641e827c8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1746&q=80',
-         alt: 'recycled scarf',
-         title: "Boots",
+         alt: 'bag',
+         title: "Evening Handbag",
          body: "Boots made from recycled rubber or eco-friendly leather alternatives can be both fashionable and environmentally responsible.",
-         price: "121,99"
+         price: "54,99"
         },
 
         {id: "13",
          url: 'https://images.unsplash.com/photo-1509695507497-903c140c43b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2946&q=80',
-         alt: 'dress',
-         title: "White Summer Dress",
+         alt: 'Sunglasses',
+         title: "Sunglasses",
          body: "This white dress made from sustainable fabrics can be the perfect addition to your wardrobe. Ideal for hot summer days.",
-         price: "49,99"
+         price: "18,99"
         },
 
         {id: "14",
          url: 'https://images.unsplash.com/photo-1523779105320-d1cd346ff52b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1746&q=80',
-         alt: 'Second Hand',
-         title: "Backpack",
+         alt: 'Brown Handbag',
+         title: "Brown Handbag",
          body: "A Faux leather backpack made from 100% PET plastic with enough space for your belongings. Available in multiple colors.",
-         price: "79,99"
+         price: "42,69"
         },
 
         {id: "15",
          url: 'https://images.unsplash.com/photo-1512032915910-144d53456b7e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1746&q=80',
          alt: 'recycled scarf',
-         title: "Schal",
+         title: "Earings",
          body: "A scarf made from sustainable materials such as organic cotton or recycled polyester can be a stylish and eco-conscious accessory.",
-         price: "39,79"
+         price: "14,79"
         },
 
 
         {id: "16",
          url: 'https://images.unsplash.com/photo-1512201078372-9c6b2a0d528a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1746&q=80',
          alt: 'recycled scarf',
-         title: "Boots",
+         title: "Black Handbag",
          body: "Boots made from recycled rubber or eco-friendly leather alternatives can be both fashionable and environmentally responsible.",
-         price: "121,99"
+         price: "21,99"
         },
 
 
