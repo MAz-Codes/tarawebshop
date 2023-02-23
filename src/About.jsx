@@ -7,7 +7,7 @@ function About() {
         <HStack align={"center"} mx={{ base: '5', lg: '20' }} gap={2} mt="10">
             <Stack textAlign={"left"}>
                 <Heading>About Us</Heading>
-                <Text lineHeight={"2"} fontSize={"md"} fontWeight="semibold" pt="10">Founded in 2001 in the heart of Europe, our company was born out of a passion for sustainability and fashion. Started as a team of two eco-conscious individuals, we set out to make a difference in the fashion industry by creating sustainable and affordable clothing options.
+                <Text lineHeight={"2"} fontSize={"md"} pt="10">Founded in 2001 in the heart of Europe, our company was born out of a passion for sustainability and fashion. Started as a team of two eco-conscious individuals, we set out to make a difference in the fashion industry by creating sustainable and affordable clothing options.
 
                 Our journey began with a small boutique store in a quaint corner of the city, but our vision for sustainable fashion quickly caught on, and our company grew to what it is today. <br/><br/>We believe that fashion should not come at a cost to our planet, and we are proud to offer stylish and sustainable clothing options that don't break the bank.
 

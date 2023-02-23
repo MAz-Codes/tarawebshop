@@ -21,7 +21,7 @@ import {
 
     
     <Container  role="contentinfo" maxW="100%"   >
-        <Divider boxShadow={"dark-lg"} mt="5"/>
+        <Divider boxShadow={"dark"} mt="5"/>
         <Stack
         direction={{
         base: 'column',
