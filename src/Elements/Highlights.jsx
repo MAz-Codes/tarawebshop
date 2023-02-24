@@ -1,14 +1,30 @@
 import React from 'react'
 import { useState } from 'react'
-import { Box,
-    Heading,
-    Spacer,
-    Divider
+import { useContext } from 'react'
+import { Heading,
+  Divider,
+  Box,
+  CardFooter,
+  Button,
+  Card,
+  Img,
+  Text,
+  CardBody,
+  Stack,
+  Grid
 } from '@chakra-ui/react'
-import CardTemplate from '../Templates/CardTemplate'
-
+import { CartContext } from '../App';
 
 function Highlights() {
+
+
+  const { cartnum, setCartnum } = useContext(CartContext);
+
+  const add = (item) => {
+    setCartnum(cartnum + 1);
+    addToCart(item);
+  };
+
     const [infos, setInfos] = useState([
         {id: "1",
          url: 'https://images.unsplash.com/photo-1506760105842-74c56599ed06?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
@@ -35,7 +51,49 @@ function Highlights() {
         >
           <Divider boxShadow={"dark-lg"}/>
           <Heading p="6">Season Highlights</Heading>
-          <CardTemplate infos={infos}/>
+          <Grid 
+    templateColumns={{base: "repeat(1, 1fr)",
+                    md: "repeat(2, 1fr)"}}
+    gap={2}
+    >
+        {infos.map((info) => (
+            <Card
+            margin={2}
+            key= {info.id}
+            maxWidth={"auto"}
+            minWidth="auto"
+            borderRadius="lg"
+            boxShadow={"2xl"}
+            >
+                <CardBody>
+                    <Img
+                    src={info.url}
+                    alt={info.alt}
+                    borderRadius='lg'
+                    />
+                    <Stack mt='6' spacing='3' align="space-between">
+                        <Heading size='md'>{info.title}</Heading>
+                        <Text>
+                            {info.body}
+                        </Text>
+                        <Text color='gray.600' fontSize='2xl'>
+                            € {info.price}
+                        </Text>
+                    </Stack>
+                </CardBody>
+                <Divider color={"gray.300"}  />
+                <CardFooter justify={"center"}>
+                        <Button
+                        onClick={()=> add(info)}
+                        _hover={{ bg: 'gray.300', textColor: "#1a1f2c"}}
+                        bg="gray.200"
+                        maxWidth={{ base: "100%", md: "80%" }}>
+                        Add to cart
+                        </Button>
+                </CardFooter>
+            </Card>
+        ))}
+    </Grid>
         </Box>
       )
     }

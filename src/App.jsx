@@ -7,6 +7,7 @@ import Footer from './Elements/Footer'
 import About from './Pages/About';
 import Catalog from './Pages/Catalog';
 import ContactPage from './Pages/ContactPage';
+import ShoppingCart from './Pages/ShoppingCart';
 import SuccessContact from './Pages/SuccessContact';
 
 export const CartContext = createContext();
@@ -25,6 +26,7 @@ function App() {
           <Route path="/catalog" element={<Catalog />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/success" element={<SuccessContact />} />
+          <Route path="/cart" element={<ShoppingCart />} />
         </Routes>
         <Footer />
       </CartContext.Provider>
