@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Box,
     Heading
 } from '@chakra-ui/react'
-import CatalogTemplate from './CatalogTemplate'
+import CatalogTemplate from '../Templates/CatalogTemplate'
 
 
 function Catalog() {

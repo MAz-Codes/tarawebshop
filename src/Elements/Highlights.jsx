@@ -5,7 +5,7 @@ import { Box,
     Spacer,
     Divider
 } from '@chakra-ui/react'
-import CardTemplate from './CardTemplate'
+import CardTemplate from '../Templates/CardTemplate'
 
 
 function Highlights() {

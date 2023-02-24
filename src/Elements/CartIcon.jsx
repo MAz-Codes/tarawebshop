@@ -1,7 +1,12 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { Flex, IconButton, Text } from '@chakra-ui/react'
 import { FiShoppingCart } from 'react-icons/fi'
+import { CartContext } from '../App';
+
 function CartIcon() {
+
+  const { cartnum, setCartnum } = useContext(CartContext);
+
   return (
     <Flex direction={"row"} align="center">
       <IconButton
@@ -23,7 +28,7 @@ function CartIcon() {
       fontWeight={"bold"}
       fontSize="9"
       color="black"
-      >1</Text>
+      >{cartnum}</Text>
     </Flex>
   )
 }

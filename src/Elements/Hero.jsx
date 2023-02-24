@@ -1,5 +1,5 @@
 import React from 'react'
-import Video from "./assets/take.mp4"
+import Video from "../assets/take.mp4"
 import { Box, Link, Divider, Heading, Text, Button } from '@chakra-ui/react'
 import { useNavigate } from "react-router-dom";
 

@@ -10,7 +10,7 @@ import {
     useBreakpointValue,
   } from '@chakra-ui/react'
 import { FiMenu } from 'react-icons/fi'
-import Logo from "./assets/BlackLogo.svg"
+import Logo from "../assets/BlackLogo.svg"
 import CartIcon from './CartIcon'
 import { useNavigate } from "react-router-dom";
 

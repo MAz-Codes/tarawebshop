@@ -1,9 +1,9 @@
-import './App.css'
+import '../App.css'
 import { Route, Routes } from "react-router-dom";
-import Hero from './Hero'
-import Navbar from './Navbar'
-import Highlights from './Highlights'
-import Footer from './Footer'
+import Hero from '../Elements/Hero'
+import Navbar from '../Elements/Navbar'
+import Highlights from '../Elements/Highlights'
+import Footer from '../Elements/Footer'
 
 function Home() {
 

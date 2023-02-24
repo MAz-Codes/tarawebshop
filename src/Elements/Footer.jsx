@@ -11,7 +11,7 @@ import {
   } from '@chakra-ui/react'
   import { useNavigate } from "react-router-dom";
   import { FaFacebook, FaInstagramSquare, FaTwitter } from 'react-icons/fa'
-  import Logo from "./assets/BlackLogo.svg"
+  import Logo from "../assets/BlackLogo.svg"
 
 
   export const Footer = () => {
@@ -19,7 +19,6 @@ import {
 
     return (
 
-    
     <Container  role="contentinfo" maxW="100%"   >
         <Divider boxShadow={"dark"} mt="5"/>
         <Stack
