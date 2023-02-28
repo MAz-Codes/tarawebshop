@@ -25,14 +25,16 @@ import { useNavigate } from "react-router-dom";
 
     return (
         <Box
+        
+        bg={"white"}
+        position="sticky"
+        top="0"
+        zIndex="sticky"
         as="section"
         w="100%"
-        pb={{
-          base: '1',
-          md: '3',
-        }}
+        
       >
-        <Box as="nav" bg="bg-surface" px="2" boxShadow="base" >
+        <Box as="nav" px="2" boxShadow="base" >
           <Container
           maxW="100%"
           py={{
@@ -40,7 +42,7 @@ import { useNavigate } from "react-router-dom";
             lg: '3',
           }}
           >
-            <HStack spacing="10" justify="space-between">
+            <HStack spacing="10" justify="space-between" >
                    {isDesktop ? (
                 <Flex justify="space-between" flex="2">
                   <Image src={Logo} alt="Tara Logo" opacity={"70%"} w={{base:"0%", md:"50px"}} h={{base:"0%", md:"50px"}}></Image>
@@ -64,6 +66,8 @@ import { useNavigate } from "react-router-dom";
                   />
 
                   <Image
+                     onClick={() =>  navi('/')}
+                     _hover={{ cursor: 'pointer' }}
                     src={Logo}
                     alt="Tara Logo"
                     opacity={"90%"}
