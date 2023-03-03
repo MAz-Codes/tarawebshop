@@ -45,10 +45,10 @@ export const Navbar= () => {
           <HStack spacing="10" justify="space-between" >
                  {isDesktop ? (
               <Flex justify="space-between" flex="2">
-                <Image onClick={() =>  navi('/')}
+                <Image onClick={() =>  navi('/taraWebshop')}
                    _hover={{ cursor: 'pointer' }} src={Logo} alt="Tara Logo" opacity={"70%"} w={{base:"0%", md:"50px"}} h={{base:"0%", md:"50px"}}></Image>
                 <ButtonGroup variant="link"  spacing="8" pl="20">
-                  <Button textColor="black" borderRadius={"50px"}  px="4" style={{textDecoration: 'none'}} onClick={() =>  navi('/tarawebshop')}>Home</Button>
+                  <Button textColor="black" borderRadius={"50px"}  px="4" style={{textDecoration: 'none'}} onClick={() =>  navi('/taraWebshop')}>Home</Button>
                   <Button textColor="black" borderRadius={"50px"} px="4" style={{textDecoration: 'none'}} onClick={() =>  navi('/catalog')}>Catalog</Button>
                   <Button textColor="black"  borderRadius={"50px"} px="4" style={{textDecoration: 'none'}} onClick={() => navi('/about')} >About us</Button>
                   <Button textColor="black" borderRadius={"50px"} px="4" style={{textDecoration: 'none'}} onClick={() => navi('/contact')}>Contact</Button>
@@ -67,7 +67,7 @@ export const Navbar= () => {
                 />
 
                 <Image
-                   onClick={() =>  navi('/')}
+                   onClick={() =>  navi('/taraWebshop')}
                    _hover={{ cursor: 'pointer' }}
                   src={Logo}
                   alt="Tara Logo"
