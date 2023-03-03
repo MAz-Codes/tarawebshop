@@ -56,7 +56,7 @@ import {
                         Shop
                     </Text>
                     <Stack spacing="3" shouldWrapChildren >
-                        <Button variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/')}>Home</Button>
+                        <Button variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/tarawebshop')}>Home</Button>
                         <Button variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/catalog')}>Catalog</Button>
                     </Stack>
                     </Stack>

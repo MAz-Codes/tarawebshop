@@ -24,7 +24,7 @@ function App() {
         <ItemContext.Provider value={{item, setItem}}>
           <Navbar />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/tarawebshop" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/catalog" element={<Catalog />} />
             <Route path="/contact" element={<ContactPage />} />

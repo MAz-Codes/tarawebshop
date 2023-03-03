@@ -25,7 +25,7 @@ function SuccessContact() {
             Thanks for contacting us. Our team will get in touch with you soon.
             </AlertDescription>
         </Alert>
-        <Button onClick={() => redirect('/')}>Continue Shopping</Button>
+        <Button onClick={() => redirect('/tarawebshop')}>Continue Shopping</Button>
     </VStack>
   )
 }
