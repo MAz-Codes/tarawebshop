@@ -45,7 +45,8 @@ export const Navbar= () => {
           <HStack spacing="10" justify="space-between" >
                  {isDesktop ? (
               <Flex justify="space-between" flex="2">
-                <Image src={Logo} alt="Tara Logo" opacity={"70%"} w={{base:"0%", md:"50px"}} h={{base:"0%", md:"50px"}}></Image>
+                <Image onClick={() =>  navi('/')}
+                   _hover={{ cursor: 'pointer' }} src={Logo} alt="Tara Logo" opacity={"70%"} w={{base:"0%", md:"50px"}} h={{base:"0%", md:"50px"}}></Image>
                 <ButtonGroup variant="link"  spacing="8" pl="20">
                   <Button textColor="black" borderRadius={"50px"}  px="4" style={{textDecoration: 'none'}} onClick={() =>  navi('/')}>Home</Button>
                   <Button textColor="black" borderRadius={"50px"} px="4" style={{textDecoration: 'none'}} onClick={() =>  navi('/catalog')}>Catalog</Button>
