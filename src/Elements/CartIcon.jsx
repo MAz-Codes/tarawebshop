@@ -9,25 +9,22 @@ function CartIcon() {
   const { cartnum, setCartnum } = useContext(CartContext);
 
   return (
-    <Flex direction={"row"} align="center"  border="none" >
+    <Flex direction={"row"} align="center">
       <IconButton
       onClick={() => redirect("/cart")}
       color="#718095"
-      border="none" 
       bg={"transparent"}
       aria-label='Shopping Cart'
       fontSize='20px'
       _hover={{ bg: "transparent", textColor: "#1a1f2c"}}
-      _focus={{bg: "transparent", textColor: "black", outline: "none", fontSize:'26px'}}
-      icon={< FiShoppingCart/>}
+      icon={< FiShoppingCart />}
       />
 
       <Text
       borderRadius={"10"}
-      border="none" 
       opacity="0.7"
       px="1"
-      mx="7"
+      mx="8"
       bg="green.300"
       position={"absolute"}
       fontWeight={"bold"}

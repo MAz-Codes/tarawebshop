@@ -14,7 +14,6 @@ function Hero() {
     mx={{ base: '2', lg: '1' }}
     align="center"
     p={6}
-    
     >
   <video
     autoPlay
@@ -54,7 +53,7 @@ function Hero() {
             fontWeight="bold"
             px="2.5rem"
             py="1.5rem"
-            width={{ base: '80%', md: 'full' }}
+            width="full"
             rounded="md"
             _hover={{ bg: 'gray.300', textColor: "#1a1f2c",  textDecoration: 'none' }}
             onClick={() => navi('/catalog')}
