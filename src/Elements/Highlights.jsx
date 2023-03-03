@@ -14,18 +14,20 @@ import { Heading,
   Grid
 } from '@chakra-ui/react'
 import { CartContext } from '../App';
+import { ItemContext } from '../App';
 
 function Highlights() {
 
 
   const { cartnum, setCartnum } = useContext(CartContext);
+  const { item, setItem } = useContext(ItemContext);
 
-  const add = (item) => {
+  const add = (infos) => {
     setCartnum(cartnum + 1);
-    addToCart(item);
+    setItem([...item, { id: infos.id, url: infos.url, title: infos.title, price: infos.price,}]);
   };
 
-    const [infos, setInfos] = useState([
+    const infos = [
         {id: "1",
          url: 'https://images.unsplash.com/photo-1506760105842-74c56599ed06?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
          alt: 'dress',
@@ -42,7 +44,7 @@ function Highlights() {
          price: "121,99"
         },
 
-     ])
+     ]
 
      return (
         <Box
