@@ -19,8 +19,8 @@ import {
 
     return (
 
-    <Container  role="contentinfo" maxW="100%"   >
-        <Divider boxShadow={"dark"} mt="5"/>
+    <Container  role="contentinfo" maxW="100%" mt="12vh"  >
+        <Divider boxShadow={"dark"} />
         <Stack
         direction={{
         base: 'column',
@@ -56,8 +56,8 @@ import {
                         Shop
                     </Text>
                     <Stack  spacing="3" shouldWrapChildren >
-                        <Button color="#252e36" variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/taraWebshop')}>Home</Button>
-                        <Button color="#252e36" variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/catalog')}>Catalog</Button>
+                        <Button color="#252e36" variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/tarawebshop')}>Home</Button>
+                        <Button color="#252e36" variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/tarawebshop/catalog')}>Catalog</Button>
                     </Stack>
                     </Stack>
                     <Stack spacing="4" minW="36" flex="1">
@@ -65,15 +65,15 @@ import {
                         Support
                     </Text>
                     <Stack spacing="3" shouldWrapChildren>
-                        <Button color="#252e36" variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/about')}>About us</Button>
-                        <Button color="#252e36" variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/contact')}>Contact</Button>
+                        <Button color="#252e36" variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/tarawebshop/about')}>About us</Button>
+                        <Button color="#252e36" variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/tarawebshop/contact')}>Contact</Button>
                     </Stack>
                     </Stack>
                 </Stack>
                 <ButtonGroup variant="ghost" opacity={{base:"0%", lg:"100%"}} >
                         <IconButton
                             as="a"
-                            href="#"
+                            href="https://instagram.com/"
                             aria-label="Instagram"
                             icon={<FaInstagramSquare fontSize="1.25rem" />}
                         />

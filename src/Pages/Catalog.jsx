@@ -1,14 +1,31 @@
 import React from 'react'
-import { useState } from 'react'
-import { Box,
+import { useContext } from 'react'
+import { Heading,
+  Box,
+  CardFooter,
+  Button,
+  Card,
+  Img,
   Text,
-    Heading
+  CardBody,
+  Stack,
+  Grid
 } from '@chakra-ui/react'
-import CatalogTemplate from '../Templates/CatalogTemplate'
-
+import { motion } from 'framer-motion';
+import { CartContext } from '../App';
+import { ItemContext } from '../App';
 
 function Catalog() {
-    const [infos, setInfos] = useState([
+
+  const { cartnum, setCartnum } = useContext(CartContext);
+  const { item, setItem } = useContext(ItemContext);
+
+  const add = (infos) => {
+    setCartnum(cartnum + 1);
+    setItem([...item, { id: infos.id, url: infos.url, title: infos.title, price: infos.price,}]);
+  };
+
+    const infos= [
          {id: "1",
          url: 'https://images.unsplash.com/photo-1506760105842-74c56599ed06?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
          alt: 'dress',
@@ -143,16 +160,63 @@ function Catalog() {
 
 
 
-     ])
+     ]
 
      return (
         <Box
+        as={motion.div}
+    initial={{opacity:0}}
+    animate={{opacity:1, transition: {duration: 1} }}
+    exit={{opacity:0, transition: {duration: 1} }}
         mx={{ base: '5', lg: '20' }}
         >
             <Box mt={"12vh"} >
                 <Heading textAlign={"left"} fontSize={{base:"10vw", lg:"8vw"}} pb="6vh" textColor={"#3e5249"}>OUR SPRING CATALOG</Heading>
             </Box>
-          <CatalogTemplate infos={infos}/>
+            <Grid 
+    templateColumns={{base: "repeat(1, 1fr)",
+                    md: "repeat(2, 1fr)",
+                    xl: "repeat(4, 1fr)"}}
+    gap={"2vh"}
+    >
+        {infos.map((info) => (
+            <Card
+            bg="#bed4ca"
+            margin={2}
+            key= {info.id}
+            maxWidth={"auto"}
+            minWidth="auto"
+            borderRadius="lg"
+            boxShadow={"2xl"}
+            >
+                <CardBody  borderRadius="xl">
+                    <Img
+                    src={info.url}
+                    alt={info.alt}
+                    borderRadius='lg'
+                    />
+                    <Stack mt='6' spacing='3' align="space-between">
+                        <Heading size='md'>{info.title}</Heading>
+                        <Text>
+                            {info.body}
+                        </Text>
+                        <Text color='gray.600' fontSize='2xl'>
+                            € {info.price}
+                        </Text>
+                    </Stack>
+                </CardBody>
+                <CardFooter justify={"center"}>
+                        <Button
+                        onClick={()=> add(info)}
+                        bg="#81968C"
+                        _hover={{ bg: 'gray.300', textColor: "#1a1f2c"}}
+                        maxWidth={{ base: "100%", md: "80%" }}>
+                        Add to cart
+                        </Button>
+                </CardFooter>
+            </Card>
+        ))}
+    </Grid>
         </Box>
       )
     }

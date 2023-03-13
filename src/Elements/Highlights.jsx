@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 import { useContext } from 'react'
 import { Heading,
   Divider,
@@ -28,7 +27,7 @@ function Highlights() {
   };
 
     const infos = [
-        {id: "1",
+        {id: "dress",
          url: 'https://images.unsplash.com/photo-1506760105842-74c56599ed06?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
          alt: 'dress',
          title: "White Summer Dress",
@@ -36,7 +35,7 @@ function Highlights() {
          price: "79,99"
         },
 
-        {id: "2",
+        {id: "f21",
          url: 'https://images.unsplash.com/photo-1475180429745-7bdddbdf4e3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80',
          alt: 'Second Hand',
          title: "FL21 Backpack",

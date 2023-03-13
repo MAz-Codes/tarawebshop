@@ -1,9 +1,14 @@
 import { Image, Stack, HStack, Box, Heading, Text } from '@chakra-ui/react'
+import { motion } from 'framer-motion'
 import React from 'react'
 
 function About() {
   return (
-    <Box>
+    <Box
+    as={motion.div}
+    initial={{opacity:0}}
+    animate={{opacity:1, transition: {duration: 1} }}
+    exit={{opacity:0, transition: {duration: 1} }}>
         <HStack align={"center"} mx={{ base: '5', lg: '20' }} gap={2} >
             <Stack textAlign={"left"}>
                 <Heading pt="12vh" fontSize="8vw" textColor={"#3e5249"}>ABOUT US</Heading>

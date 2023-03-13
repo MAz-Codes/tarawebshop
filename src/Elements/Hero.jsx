@@ -65,7 +65,7 @@ function Hero() {
           width="fit-content"
           rounded="md"
           _hover={{ bg: 'gray.300', textColor: "#1a1f2c",  textDecoration: 'none' }}
-          onClick={() => navi('/catalog')}
+          onClick={() => navi('/tarawebshop/catalog')}
             >Explore Catalog
           </Button>
         </Box>

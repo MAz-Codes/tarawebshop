@@ -2,6 +2,7 @@ import React from 'react';
 import {useState} from "react";
 import { Box, Heading, Text, Input, Textarea, Button } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom'
+import { motion } from 'framer-motion';
 
 function ContactPage() {
 
@@ -46,7 +47,11 @@ function ContactPage() {
     };
 
   return (
-    <Box>
+    <Box
+    as={motion.div}
+    initial={{opacity:0}}
+    animate={{opacity:1, transition: {duration: 1} }}
+    exit={{opacity:0, transition: {duration: 1} }}>
         <Box width={{ base: '100%', md: '50%' }} mx="auto" px={{base:'10', md: "auto"}} py="20" >
             <Heading as="h1" mb="6">Contact Us</Heading>
             <Text mb="6">Fill out the form below to get in touch with us.</Text>
@@ -63,7 +68,7 @@ function ContactPage() {
                   }}
                 onChange={(event) => setName(event.target.value)} />
                 {errors.name && <Text fontSize="sm" mt="-2" mb="2"color="red.500">{errors.name}</Text>}
-                <Input placeholder="Your email" mb="4" 
+                <Input placeholder="Your email" mb="4"
                 value={email}
                 onBlur={() => {
                     if (!email) {

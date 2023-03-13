@@ -1,5 +1,4 @@
 import './App.css'
-import { extendTheme } from '@chakra-ui/react';
 import {useState, createContext} from "react"
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home"
@@ -10,6 +9,7 @@ import Catalog from './Pages/Catalog';
 import ContactPage from './Pages/ContactPage';
 import ShoppingCart from './Pages/ShoppingCart';
 import SuccessContact from './Pages/SuccessContact';
+import {AnimatePresence} from "framer-motion"
 
 export const CartContext = createContext();
 export const ItemContext = createContext();
@@ -21,22 +21,24 @@ function App() {
   const [item , setItem] = useState([])
 
   return (
-    <div className="App">
-      <CartContext.Provider value={{cartnum, setCartnum}}>
-        <ItemContext.Provider value={{item, setItem}}>
-          <Navbar />
-          <Routes>
-            <Route path="/taraWebshop" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/catalog" element={<Catalog />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/success" element={<SuccessContact />} />
-            <Route path="/cart" element={<ShoppingCart />} />
-          </Routes>
-          <Footer />
-        </ItemContext.Provider>
-      </CartContext.Provider>
-    </div>
+    <AnimatePresence >
+      <div className="App">
+        <CartContext.Provider value={{cartnum, setCartnum}}>
+          <ItemContext.Provider value={{item, setItem}}>
+            <Navbar />
+            <Routes>
+              <Route path="/tarawebshop" element={<Home />} />
+              <Route path="/tarawebshop/about" element={<About />} />
+              <Route path="/tarawebshop/catalog" element={<Catalog />} />
+              <Route path="/tarawebshop/contact" element={<ContactPage />} />
+              <Route path="/tarawebshop/success" element={<SuccessContact />} />
+              <Route path="/tarawebshop/cart" element={<ShoppingCart />} />
+            </Routes>
+            <Footer />
+          </ItemContext.Provider>
+        </CartContext.Provider>
+      </div>
+    </AnimatePresence>
   )
 }
 

@@ -46,14 +46,14 @@ export const Navbar= () => {
                 alt="Tara Logo"
                 opacity={"1"}
                 _hover={{ cursor: 'pointer' }}
-                w={{base:"0%", md:"50px", lg:"70px"}} 
+                w={{base:"0%", md:"50px", lg:"70px"}}
                 h={{base:"0%", md:"50px",lg:"70px"}}
                 />
                 <ButtonGroup variant="link" spacing="20" pr="2vw">
-                  <Button textColor="black"  px="4" style={{textDecoration: 'none'}} onClick={() =>  navi('/taraWebshop')}>Home</Button>
-                  <Button textColor="black" borderRadius={"50px"} px="4" style={{textDecoration: 'none'}} onClick={() =>  navi('/catalog')}>Catalog</Button>
-                  <Button textColor="black"  borderRadius={"50px"} px="4" style={{textDecoration: 'none'}} onClick={() => navi('/about')} >About us</Button>
-                  <Button textColor="black" borderRadius={"50px"} px="4" style={{textDecoration: 'none'}} onClick={() => navi('/contact')}>Contact</Button>
+                  <Button textColor="black"  px="4" style={{textDecoration: 'none'}} onClick={() =>  navi('/tarawebshop')}>Home</Button>
+                  <Button textColor="black" borderRadius={"50px"} px="4" style={{textDecoration: 'none'}} onClick={() =>  navi('/tarawebshop/catalog')}>Catalog</Button>
+                  <Button textColor="black"  borderRadius={"50px"} px="4" style={{textDecoration: 'none'}} onClick={() => navi('/tarawebshop/about')} >About us</Button>
+                  <Button textColor="black" borderRadius={"50px"} px="4" style={{textDecoration: 'none'}} onClick={() => navi('/tarawebshop/contact')}>Contact</Button>
                 </ButtonGroup>
                 <CartIcon/>
               </Flex>
@@ -66,7 +66,7 @@ export const Navbar= () => {
                 />
 
                 <Image
-                   onClick={() =>  navi('/taraWebshop')}
+                   onClick={() =>  navi('/tarawebshop')}
                    _hover={{ cursor: 'pointer' }}
                   src={Logo}
                   alt="Tara Logo"
