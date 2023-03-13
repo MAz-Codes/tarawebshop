@@ -48,11 +48,11 @@ function Highlights() {
 
      return (
         <Box
-        pt="10"
+        pt="5vh"
         mx={{ base: '5', lg: '20' }}
         >
-          <Divider boxShadow={"dark-lg"}/>
-          <Heading p="6">Season Highlights</Heading>
+
+          <Heading textColor={"#3e5249"} p="6">Season Highlights</Heading>
           <Grid 
     templateColumns={{base: "repeat(1, 1fr)",
                     md: "repeat(2, 1fr)"}}
@@ -60,6 +60,7 @@ function Highlights() {
     >
         {infos.map((info) => (
             <Card
+            bg="#bed4ca"
             margin={2}
             key= {info.id}
             maxWidth={"auto"}
@@ -67,7 +68,7 @@ function Highlights() {
             borderRadius="lg"
             boxShadow={"2xl"}
             >
-                <CardBody>
+                <CardBody  borderRadius="xl">
                     <Img
                     src={info.url}
                     alt={info.alt}
@@ -83,12 +84,11 @@ function Highlights() {
                         </Text>
                     </Stack>
                 </CardBody>
-                <Divider color={"gray.300"}  />
                 <CardFooter justify={"center"}>
                         <Button
                         onClick={()=> add(info)}
+                        bg="#81968C"
                         _hover={{ bg: 'gray.300', textColor: "#1a1f2c"}}
-                        bg="gray.200"
                         maxWidth={{ base: "100%", md: "80%" }}>
                         Add to cart
                         </Button>

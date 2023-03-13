@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { Box,
+  Text,
     Heading
 } from '@chakra-ui/react'
 import CatalogTemplate from '../Templates/CatalogTemplate'
@@ -148,9 +149,8 @@ function Catalog() {
         <Box
         mx={{ base: '5', lg: '20' }}
         >
-            <Box my={"20"} >
-                <Heading p="2">Our 2023 Spring Catalog</Heading>
-                <p>brows through our fantastic new collection</p>
+            <Box mt={"12vh"} >
+                <Heading textAlign={"left"} fontSize={{base:"10vw", lg:"8vw"}} pb="6vh" textColor={"#3e5249"}>OUR SPRING CATALOG</Heading>
             </Box>
           <CatalogTemplate infos={infos}/>
         </Box>

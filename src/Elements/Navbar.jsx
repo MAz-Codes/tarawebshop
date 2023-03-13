@@ -10,7 +10,7 @@ import {
   useBreakpointValue,
 } from '@chakra-ui/react'
 import { FiMenu } from 'react-icons/fi'
-import Logo from "../assets/BlackLogo.svg"
+import Logo from "../assets/icon.jpg"
 import CartIcon from './CartIcon'
 import { useNavigate } from "react-router-dom";
 
@@ -25,38 +25,37 @@ export const Navbar= () => {
 
   return (
       <Box
-      
-      bg={"white"}
+      bg={"#bed4ca"}
       position="sticky"
       top="0"
       zIndex="sticky"
       as="section"
       w="100%"
-      
     >
-      <Box as="nav" px="2" boxShadow="base" >
+      <Box as="nav" px="2" py="1vh" boxShadow="base" >
         <Container
         maxW="100%"
-        py={{
-          base: '2',
-          lg: '3',
-        }}
+       
         >
           <HStack spacing="10" justify="space-between" >
                  {isDesktop ? (
               <Flex justify="space-between" flex="2">
-                <Image onClick={() =>  navi('/taraWebshop')}
-                   _hover={{ cursor: 'pointer' }} src={Logo} alt="Tara Logo" opacity={"70%"} w={{base:"0%", md:"50px"}} h={{base:"0%", md:"50px"}}></Image>
-                <ButtonGroup variant="link"  spacing="8" pl="20">
-                  <Button textColor="black" borderRadius={"50px"}  px="4" style={{textDecoration: 'none'}} onClick={() =>  navi('/taraWebshop')}>Home</Button>
+                <Image
+                src={Logo}
+                onClick={() =>  navi('/taraWebshop')}
+                alt="Tara Logo"
+                opacity={"1"}
+                _hover={{ cursor: 'pointer' }}
+                w={{base:"0%", md:"50px", lg:"70px"}} 
+                h={{base:"0%", md:"50px",lg:"70px"}}
+                />
+                <ButtonGroup variant="link" spacing="20" pr="2vw">
+                  <Button textColor="black"  px="4" style={{textDecoration: 'none'}} onClick={() =>  navi('/taraWebshop')}>Home</Button>
                   <Button textColor="black" borderRadius={"50px"} px="4" style={{textDecoration: 'none'}} onClick={() =>  navi('/catalog')}>Catalog</Button>
                   <Button textColor="black"  borderRadius={"50px"} px="4" style={{textDecoration: 'none'}} onClick={() => navi('/about')} >About us</Button>
                   <Button textColor="black" borderRadius={"50px"} px="4" style={{textDecoration: 'none'}} onClick={() => navi('/contact')}>Contact</Button>
                 </ButtonGroup>
-                <HStack spacing="3">
-                  <Button borderRadius={"50px"} bg="gray.200">Sign in</Button>
-                  <CartIcon></CartIcon>
-                </HStack>
+                <CartIcon/>
               </Flex>
             ) : (
               <Flex justify={"space-between"} flex="2" mx="3">

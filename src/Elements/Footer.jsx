@@ -52,21 +52,21 @@ import {
                 </Image>
                 <Stack direction="row" spacing="8">
                     <Stack spacing="4" minW="36" flex="1" >
-                    <Text fontSize="sm" fontWeight="semibold" color="subtle">
+                    <Text fontSize="lg" fontFamily="RobotoMonoBold" color="subtle">
                         Shop
                     </Text>
-                    <Stack spacing="3" shouldWrapChildren >
-                        <Button variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/taraWebshop')}>Home</Button>
-                        <Button variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/catalog')}>Catalog</Button>
+                    <Stack  spacing="3" shouldWrapChildren >
+                        <Button color="#252e36" variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/taraWebshop')}>Home</Button>
+                        <Button color="#252e36" variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/catalog')}>Catalog</Button>
                     </Stack>
                     </Stack>
                     <Stack spacing="4" minW="36" flex="1">
-                    <Text fontSize="sm" fontWeight="semibold" color="subtle">
+                    <Text fontSize="lg" fontFamily="RobotoMonoBold" color="subtle">
                         Support
                     </Text>
                     <Stack spacing="3" shouldWrapChildren>
-                        <Button variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/about')}>About us</Button>
-                        <Button variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/contact')}>Contact</Button>
+                        <Button color="#252e36" variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/about')}>About us</Button>
+                        <Button color="#252e36" variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/contact')}>Contact</Button>
                     </Stack>
                     </Stack>
                 </Stack>
@@ -83,7 +83,7 @@ import {
             </Stack>
         </Stack>
       <Divider />
-    <Text fontSize="sm" color="#828fa1" py="2">
+    <Text fontSize="sm" color="#8252e36" py="2">
         &copy; {new Date().getFullYear()} Tara Fashion Inc. All rights reserved.
     </Text>
     </Container>

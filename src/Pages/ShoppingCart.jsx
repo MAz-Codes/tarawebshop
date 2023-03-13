@@ -4,8 +4,6 @@ import { ItemContext } from '../App'
 import { Heading,
   Divider,
   Box,
-  CardFooter,
-  Button,
   Card,
   Img,
   Text,

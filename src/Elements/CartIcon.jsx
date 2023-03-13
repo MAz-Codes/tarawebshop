@@ -16,22 +16,22 @@ function CartIcon() {
       border="none" 
       bg={"transparent"}
       aria-label='Shopping Cart'
-      fontSize='20px'
-      _hover={{ bg: "transparent", textColor: "#1a1f2c"}}
+      fontSize={{base:'20px', md: "25", lg:"30"}}
+      _hover={{ bg: "transparent", textColor: "#1a1f2c", fontSize:"33"}}
       _focus={{bg: "transparent", textColor: "black", outline: "none", fontSize:'26px'}}
       icon={< FiShoppingCart/>}
       />
 
       <Text
       borderRadius={"10"}
-      border="none" 
+      border="none"
       opacity="0.7"
-      px="1"
+      px={{base:'1', md: "1.5", lg:"1.5"}}
       mx="7"
-      bg="green.300"
+      bg="white"
       position={"absolute"}
       fontWeight={"bold"}
-      fontSize="9"
+      fontSize={{base:'9', md: "12", lg:"15"}}
       color="black"
       >{cartnum}</Text>
     </Flex>

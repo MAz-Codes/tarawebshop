@@ -1,4 +1,5 @@
 import './App.css'
+import { extendTheme } from '@chakra-ui/react';
 import {useState, createContext} from "react"
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home"
@@ -14,6 +15,7 @@ export const CartContext = createContext();
 export const ItemContext = createContext();
 
 function App() {
+  
 
   const [cartnum , setCartnum] = useState(0)
   const [item , setItem] = useState([])

@@ -25,10 +25,11 @@ return (
     templateColumns={{base: "repeat(1, 1fr)",
                     md: "repeat(2, 1fr)",
                     xl: "repeat(4, 1fr)"}}
-    gap={2}
+    gap={"2vh"}
     >
         {infos.map((info) => (
             <Card
+            bg={"#bed4ca"}
             margin={2}
             key= {info.id}
             maxWidth={"auto"}
@@ -42,7 +43,7 @@ return (
                     alt={info.alt}
                     borderRadius='lg'
                     />
-                    <Stack mt='6' spacing='3' align="space-between" maxH="100%">
+                    <Stack mt='3' spacing='1' align="space-between" maxH="100%">
                         <Heading size='md'>{info.title}</Heading>
                         <Text>
                             {info.body}
@@ -52,11 +53,10 @@ return (
                         </Text>
                     </Stack>
                 </CardBody>
-                <Divider color={"gray.300"}  />
                 <CardFooter justify={"center"}>
                         <Button
                         onClick={add}
-                        bg="gray.200"
+                        bg="#81968C"
                         maxWidth={{ base: "100%", md: "80%" }}>
                         Add to cart
                         </Button>
