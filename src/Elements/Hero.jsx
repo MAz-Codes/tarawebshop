@@ -53,14 +53,14 @@ function Hero() {
         </Heading>
         <Box
         width={{ base: '100%', md: '30%' }}
-        py="10vh">
+        py="5vh">
           <Button
           as={Link}
           bg="#81968C"
           textColor={"3e5249"}
           fontWeight="bold"
           px="2.5rem"
-          py="1.5rem"
+          py="3vh"
           maxW="70%"
           width="fit-content"
           rounded="md"

@@ -1,6 +1,6 @@
 # taraWebshop
 
-A simple SPA Webshop made with ReactJS, Vite and Chakra UI.
+A SPA Webshop made with ReactJS, Vite and Chakra UI.
 
 - The Icons are from the React Icons library.
 - The Routing was done with React Router and the useNavigate hook.
