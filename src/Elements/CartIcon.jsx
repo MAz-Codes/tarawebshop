@@ -1,7 +1,10 @@
 import React, {useContext} from 'react'
 import {useNavigate} from "react-router-dom"
-import { Flex, IconButton, Text } from '@chakra-ui/react'
+import {Flex,
+  IconButton,
+  Text} from '@chakra-ui/react'
 import { FiShoppingCart } from 'react-icons/fi'
+
 import { CartContext } from '../App';
 
 function CartIcon() {

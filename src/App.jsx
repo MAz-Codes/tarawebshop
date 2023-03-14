@@ -1,6 +1,8 @@
-import './App.css'
 import {useState, createContext} from "react"
 import { Route, Routes } from "react-router-dom";
+import {AnimatePresence} from "framer-motion"
+
+import './App.css'
 import Home from "./Pages/Home"
 import Navbar from './Elements/Navbar'
 import Footer from './Elements/Footer'
@@ -9,7 +11,7 @@ import Catalog from './Pages/Catalog';
 import ContactPage from './Pages/ContactPage';
 import ShoppingCart from './Pages/ShoppingCart';
 import SuccessContact from './Pages/SuccessContact';
-import {AnimatePresence} from "framer-motion"
+
 
 export const CartContext = createContext();
 export const ItemContext = createContext();

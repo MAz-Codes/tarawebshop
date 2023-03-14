@@ -1,7 +1,11 @@
 import React from 'react'
+import {useNavigate} from "react-router-dom";
+import {Box,
+  Link,
+  Heading,
+  Button} from '@chakra-ui/react'
+
 import Video from "../assets/take.mp4"
-import { Box, Link, Heading, Text, Button } from '@chakra-ui/react'
-import { useNavigate } from "react-router-dom";
 
 function Hero() {
 

@@ -1,8 +1,9 @@
 import { Box } from '@chakra-ui/react'
+import { motion } from 'framer-motion'
+
 import '../App.css'
 import Hero from '../Elements/Hero'
 import Highlights from '../Elements/Highlights'
-import { motion } from 'framer-motion'
 
 function Home() {
 
