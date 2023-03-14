@@ -169,9 +169,10 @@ function Catalog() {
             <Box mt={"12vh"} >
                 <Heading
                 textAlign={"left"}
-                fontSize={{base:"10vw", lg:"8vw"}}
                 pb="6vh"
                 textColor={"#3e5249"}
+                w="100%"
+                fontSize="8vw"
                     >OUR SPRING CATALOG
                 </Heading>
             </Box>

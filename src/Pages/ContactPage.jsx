@@ -55,8 +55,9 @@ function ContactPage() {
       templateRows={{base: "repeat(1, 1fr)", md: "repeat(2, 1fr)"}}
       justifyContent="cenetr"
       mx={{ base: '5', lg: '20' }}
-      py="12vh">
-        <Heading 
+      >
+        <Heading
+        py="12vh"
         h="fit-content"
         textAlign={"left"}
         w="100%"
@@ -120,7 +121,7 @@ function ContactPage() {
           </form>
         </Box>
       </Grid>
-      <Text fontSize="sm" px={{ base: '10', md: '40' }}>© 2023 All Rights Reserved. TARA is a registered trademark of TrFashion B.V. Chamber of Commerce number: 12345678. VAT number: NL123456789B01. This website is operated by Random B.V., a company registered in the Netherlands. By accessing this website, you agree to be bound by our terms and conditions and privacy policy. All content on this website, including text, images, graphics, and software, is the property of TrFashion B.V. and is protected by Dutch and international copyright laws.</Text>
+      <Text fontSize="sm" pt="6vh" px={{ base: '10', md: '40' }}>© 2023 All Rights Reserved. TARA is a registered trademark of TrFashion B.V. Chamber of Commerce number: 12345678. VAT number: NL123456789B01. This website is operated by Random B.V., a company registered in the Netherlands. By accessing this website, you agree to be bound by our terms and conditions and privacy policy. All content on this website, including text, images, graphics, and software, is the property of TrFashion B.V. and is protected by Dutch and international copyright laws.</Text>
     </Box>
   );
 }

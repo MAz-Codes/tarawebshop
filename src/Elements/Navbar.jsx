@@ -10,6 +10,10 @@ import {
   HStack,
   IconButton,
   useBreakpointValue,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem
 } from '@chakra-ui/react'
 import { FiMenu } from 'react-icons/fi'
 
@@ -18,6 +22,7 @@ import CartIcon from './CartIcon'
 
 
 export const Navbar= () => {
+
   const isDesktop = useBreakpointValue({
     base: false,
     lg: true,
@@ -27,7 +32,7 @@ export const Navbar= () => {
 
   return (
     <Box
-    bg={"#bed4ca"}
+    bg="#bed4ca"
     position="sticky"
     top="0"
     zIndex="sticky"
@@ -72,11 +77,19 @@ export const Navbar= () => {
               justify={"space-between"}
               flex="2"
               mx="3">
-                <IconButton
-                  variant="ghost"
-                  icon={<FiMenu fontSize="1.25rem" />}
-                  aria-label="Open Menu"
-                />
+                <Menu >
+                  <MenuButton
+                  as={IconButton}
+                  aria-label='menu'
+                  icon={<FiMenu />}
+                  variant='ghost'/>
+                  <MenuList bg="#bed4ca">
+                    <MenuItem bg="#bed4ca" px="4" _hover={{bg:"white"}} style={{textDecoration: 'none'}} onClick={() =>  navi('/tarawebshop')}>Home</MenuItem>
+                    <MenuItem bg="#bed4ca"  px="4" _hover={{bg:"white"}}  style={{textDecoration: 'none'}} onClick={() =>  navi('/tarawebshop/catalog')}>Catalog</MenuItem>
+                    <MenuItem bg="#bed4ca" px="4"  _hover={{bg:"white"}} style={{textDecoration: 'none'}} onClick={() => navi('/tarawebshop/about')} >About us</MenuItem>
+                    <MenuItem bg="#bed4ca" px="4"  _hover={{bg:"white"}} style={{textDecoration: 'none'}} onClick={() => navi('/tarawebshop/contact')}>Contact</MenuItem>
+                  </MenuList>
+                </Menu>
                 <Image
                   onClick={() =>  navi('/tarawebshop')}
                   _hover={{ cursor: 'pointer' }}
