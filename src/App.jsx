@@ -17,7 +17,6 @@ export const CartContext = createContext();
 export const ItemContext = createContext();
 
 function App() {
-  
 
   const [cartnum , setCartnum] = useState(0)
   const [item , setItem] = useState([])
@@ -29,12 +28,12 @@ function App() {
           <ItemContext.Provider value={{item, setItem}}>
             <Navbar />
             <Routes>
-              <Route path="/tarawebshop" element={<Home />} />
-              <Route path="/tarawebshop/about" element={<About />} />
-              <Route path="/tarawebshop/catalog" element={<Catalog />} />
-              <Route path="/tarawebshop/contact" element={<ContactPage />} />
-              <Route path="/tarawebshop/success" element={<SuccessContact />} />
-              <Route path="/tarawebshop/cart" element={<ShoppingCart />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/catalog" element={<Catalog />} />
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="/success" element={<SuccessContact />} />
+              <Route path="/cart" element={<ShoppingCart />} />
             </Routes>
             <Footer />
           </ItemContext.Provider>

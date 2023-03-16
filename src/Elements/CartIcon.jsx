@@ -14,7 +14,7 @@ function CartIcon() {
   return (
     <Flex direction={"row"} align="center"  border="none" >
       <IconButton
-      onClick={() => redirect("/tarawebshop/cart")}
+      onClick={() => redirect("/cart")}
       color="#718095"
       border="none" 
       bg={"transparent"}

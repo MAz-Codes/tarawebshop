@@ -58,8 +58,8 @@ import Logo from "../assets/BlackLogo.svg"
                         <Stack
                         spacing="3"
                         shouldWrapChildren>
-                            <Button color="#252e36" variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/tarawebshop')}>Home</Button>
-                            <Button color="#252e36" variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/tarawebshop/catalog')}>Catalog</Button>
+                            <Button color="#252e36" variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/')}>Home</Button>
+                            <Button color="#252e36" variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/catalog')}>Catalog</Button>
                         </Stack>
                     </Stack>
                     <Stack
@@ -75,8 +75,8 @@ import Logo from "../assets/BlackLogo.svg"
                         <Stack
                         spacing="3"
                         shouldWrapChildren>
-                            <Button color="#252e36" variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/tarawebshop/about')}>About us</Button>
-                            <Button color="#252e36" variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/tarawebshop/contact')}>Contact</Button>
+                            <Button color="#252e36" variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/about')}>About us</Button>
+                            <Button color="#252e36" variant="link" style={{textDecoration: 'none'}} onClick={() => navi('/contact')}>Contact</Button>
                         </Stack>
                     </Stack>
                 </Stack>

@@ -42,7 +42,7 @@ function SuccessContact() {
       <Button
       bg="#3e5249"
       textColor="#81968C"
-      onClick={() => redirect('/taraWebshop')}
+      onClick={() => redirect('/')}
         >Continue Shopping
       </Button>
     </VStack>

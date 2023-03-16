@@ -39,15 +39,15 @@ function Hero() {
       mx={{ base: '5', lg: '20' }}
       maxW="100%"
       position="relative">
-        <Heading 
+        <Heading
         textAlign={"left"}
         w="100%"
         pt="12vh"
         fontSize="8vw"
-        color="#3F524A" 
+        color="#3F524A"
         >SUSTAINABLE<br/>FASHION
         </Heading>
-        <Heading 
+        <Heading
         textAlign={"left"}
         w="100%"
         py="5vh"
@@ -69,7 +69,7 @@ function Hero() {
           width="fit-content"
           rounded="md"
           _hover={{ bg: 'gray.300', textColor: "#1a1f2c",  textDecoration: 'none' }}
-          onClick={() => navi('/tarawebshop/catalog')}
+          onClick={() => navi('/catalog')}
             >Explore Catalog
           </Button>
         </Box>

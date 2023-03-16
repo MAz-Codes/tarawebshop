@@ -54,7 +54,7 @@ export const Navbar= () => {
               flex="2">
                 <Image
                 src={Logo}
-                onClick={() =>  navi('/taraWebshop')}
+                onClick={() =>  navi('/')}
                 alt="Tara Logo"
                 opacity={"1"}
                 _hover={{ cursor: 'pointer' }}
@@ -65,10 +65,10 @@ export const Navbar= () => {
                 variant="link"
                 spacing="20"
                 pr="2vw">
-                  <Button textColor="black"  px="4" style={{textDecoration: 'none'}} onClick={() =>  navi('/tarawebshop')}>Home</Button>
-                  <Button textColor="black" borderRadius={"50px"} px="4" style={{textDecoration: 'none'}} onClick={() =>  navi('/tarawebshop/catalog')}>Catalog</Button>
-                  <Button textColor="black"  borderRadius={"50px"} px="4" style={{textDecoration: 'none'}} onClick={() => navi('/tarawebshop/about')} >About us</Button>
-                  <Button textColor="black" borderRadius={"50px"} px="4" style={{textDecoration: 'none'}} onClick={() => navi('/tarawebshop/contact')}>Contact</Button>
+                  <Button textColor="black"  px="4" style={{textDecoration: 'none'}} onClick={() =>  navi('/')}>Home</Button>
+                  <Button textColor="black" borderRadius={"50px"} px="4" style={{textDecoration: 'none'}} onClick={() =>  navi('/catalog')}>Catalog</Button>
+                  <Button textColor="black"  borderRadius={"50px"} px="4" style={{textDecoration: 'none'}} onClick={() => navi('/about')} >About us</Button>
+                  <Button textColor="black" borderRadius={"50px"} px="4" style={{textDecoration: 'none'}} onClick={() => navi('/contact')}>Contact</Button>
                 </ButtonGroup>
                 <CartIcon/>
               </Flex>
@@ -84,14 +84,14 @@ export const Navbar= () => {
                   icon={<FiMenu />}
                   variant='ghost'/>
                   <MenuList bg="#bed4ca">
-                    <MenuItem bg="#bed4ca" px="4" _hover={{bg:"white"}} style={{textDecoration: 'none'}} onClick={() =>  navi('/tarawebshop')}>Home</MenuItem>
-                    <MenuItem bg="#bed4ca"  px="4" _hover={{bg:"white"}}  style={{textDecoration: 'none'}} onClick={() =>  navi('/tarawebshop/catalog')}>Catalog</MenuItem>
-                    <MenuItem bg="#bed4ca" px="4"  _hover={{bg:"white"}} style={{textDecoration: 'none'}} onClick={() => navi('/tarawebshop/about')} >About us</MenuItem>
-                    <MenuItem bg="#bed4ca" px="4"  _hover={{bg:"white"}} style={{textDecoration: 'none'}} onClick={() => navi('/tarawebshop/contact')}>Contact</MenuItem>
+                    <MenuItem bg="#bed4ca" px="4" _hover={{bg:"white"}} style={{textDecoration: 'none'}} onClick={() =>  navi('/')}>Home</MenuItem>
+                    <MenuItem bg="#bed4ca"  px="4" _hover={{bg:"white"}}  style={{textDecoration: 'none'}} onClick={() =>  navi('/catalog')}>Catalog</MenuItem>
+                    <MenuItem bg="#bed4ca" px="4"  _hover={{bg:"white"}} style={{textDecoration: 'none'}} onClick={() => navi('/about')} >About us</MenuItem>
+                    <MenuItem bg="#bed4ca" px="4"  _hover={{bg:"white"}} style={{textDecoration: 'none'}} onClick={() => navi('/contact')}>Contact</MenuItem>
                   </MenuList>
                 </Menu>
                 <Image
-                  onClick={() =>  navi('/tarawebshop')}
+                  onClick={() =>  navi('/')}
                   _hover={{ cursor: 'pointer' }}
                   src={Logo}
                   alt="Tara Logo"
